@@ -1,14 +1,14 @@
-*{
+/*------------------- Reset CSS -------------------*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
-   
+/*------------------- Body Styles -------------------*/
+body {
     height: 100vh;
-    background-color:#339999;
+    background-color: #339999;
     background-image: url("./images/seamless-texture-crumpled-paper-free.jpg");
     display: flex;
     flex-wrap: wrap;
@@ -17,77 +17,172 @@ body{
     font-family: sans-serif;
 }
 
-.book{
+/*------------------- Book Styles -------------------*/
+.book {
     position: relative;
-    /* border: 1px solid black; */
-    width: 350px;
-    height: 400px;
+    padding: 30px;
+    width: 450px;
+    height: 500px;
+    transform: rotate(-10deg);
+    translate: 90px -90px;
 }
 
-.page{
-    /* border: 1px solid black; */
+/*------------------- Cover Styles -------------------*/
+#f1 {
+    background-color: #339999;
+    box-shadow: 5px 5px 5px 8px #555353;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
+/*------------------- Page Styles -------------------*/
+.page {
     height: 100%;
     position: absolute;
-    width: 100%;
+    width: 95%;
     top: 0;
-    left: 0 ;
+    left: 0;
     perspective: 1500px;
 }
 
-.front,.back{
-    background:linear-gradient(to right,#66ffff,#33cccc);
+.front, .back {
+    background: linear-gradient(to right, #DDDDDD, #BDBDBD);
     height: 100%;
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0 ;
+    left: 0;
     transform-origin: left;
     transition: transform 0.7s;
-
-    
+    box-shadow: 5px 5px #555353;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-  
-  .front{
-    border-left: none; 
-    background:linear-gradient(to left,#66ffff,#33cccc);
-  
-  }
-
-.front{
-z-index: 1;
-backface-visibility: hidden;
-border: 1px solid #66ffff;
-
-
+.front {
+    border-left: none;
+    background: linear-gradient(to left, #DDDDDD, #BDBDBD);
+    z-index: 1;
+    backface-visibility: hidden;
 }
 
-
-.front-content,.back-content{
+.front-content, .back-content {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.back-content{
+
+.back-content {
     transform: rotateY(180deg);
 }
 
-/* animation */
+/*------------------- Animation Styles -------------------*/
 .flipped .front,
 .flipped .back {
     transform: rotateY(-180deg);
 }
 
-.flipped-forword .front,
-.flipped-forword .back{
-    transform: rotateY(-0deg);
+/*------------------- Page Z-Index Styles -------------------*/
+#p1 { z-index: 7; }
+#p2 { z-index: 6; }
+#p3 { z-index: 5; }
+#p4 { z-index: 4; }
+#p5 { z-index: 3; }
+#p6 { z-index: 2; }
+#p7 { z-index: 1; }
+
+/*------------------- Cover Heading Styles -------------------*/
+.cover-heading {
+    color: #339999;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 27px;
 }
 
+/*------------------- Cover Text Wrapper Styles -------------------*/
+.cover-text-wraper {
+    display: flex;
+    overflow: hidden;
+}
 
+/*------------------- Heading 2 Styles -------------------*/
+#heading2 {
+    color: white;
+    font-size: 60px;
+    margin-left: 25px;
+}
 
+/*------------------- Static Cover Styles -------------------*/
+#static-cover {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+/*------------------- Dynamic Cover Styles -------------------*/
+#dynamic-cover {
+    line-height: 60px;
+    height: 40px;
+}
+
+#dynamic-cover li {
+    color: #99ffff;
+    font-size: 30px;
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+}
+
+#dynamic-cover li::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #339999;
+    border-left: 1px solid #99ffff;
+    animation: typing 3s steps(14) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 20px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: -120px;
+    }
+}
+
+/*------------------- Button Styles -------------------*/
+.forword-btn {
+    position: absolute;
+    font-size: 60px;
+    bottom: 0;
+    right: 40px;
+    color: white;
+}
+
+.backword-btn {
+    position: absolute;
+    font-size: 60px;
+    bottom: -10px;
+    right: 25px;
+    color: white;
+}
 
 button{
     margin: 10px;
@@ -95,34 +190,3 @@ button{
     border: none;
     cursor: pointer;
 }
-#flip-backword-button{
-    transform:  translateX(-350px);
-    transition: transform .5s;
-    /* z-index: 10; */
-
-}
-i{
-   
-    font-size: 50px;
-    color: gray;
-    /* outline: 1px solid black; */
-    background: transparent;
-}
-button:focus{
-    outline: none;
-}
-
-button:hover i{
-   color: #636363;
-}
-#p1{
-    z-index: 3;
-}
-#p2{
-    z-index: 2;
-}
-#p3{
-    z-index: 1;
-}
-
-   
