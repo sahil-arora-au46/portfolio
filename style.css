@@ -192,7 +192,7 @@ button{
 }
 
 
-/*------------------ intro-styles ----------------------*/
+/*------------------ intro-styles  page----------------------*/
 
 #intro-wrapper{
     height: 100%;
@@ -252,4 +252,80 @@ button{
     /* font-style: italic; */
     color: #038585;
 }
+
+
+/*------------------------------------front-page2----------------*/
+
+#front-content-p2 fieldset{
+border: none;
+color: #038585;
+width: 100%;
+height: 100%;
+padding: 0px 10px;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+#front-content-p2{
+    width: 100%;
+    height: 100%;  
+}
+legend{
+    color: #d3dbe2;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+fieldset h3,fieldset h4{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #038585;
+    font-weight: 900;
+}
+h6{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #626868;
+    font-weight: 900;
+}
+
+/*------------------work-experience----------------*/
+.timeline-container li{
+font-size: 13px;
+}
+.timeline-container ul{
+    margin-left: 60px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.timeline-container{
+    position: relative;
+    border-left: 2px solid #0eafb4;
+    /* border-top-left-radius:50% ; */
+    
+}
+
+/* .timeline-container h3{
+     
+} */
+
+
+.timeline-container div::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: #eaf0f0;
+    position: absolute;
+    background-color: #99ffff;
+    left: -6px;
+    /* margin-top: 7px; */
+    
+}
+
 
