@@ -306,13 +306,7 @@ font-size: 13px;
 .timeline-container{
     position: relative;
     border-left: 2px solid #0eafb4;
-    /* border-top-left-radius:50% ; */
-    
 }
-
-/* .timeline-container h3{
-     
-} */
 
 
 .timeline-container div::before{
@@ -324,8 +318,69 @@ font-size: 13px;
     position: absolute;
     background-color: #99ffff;
     left: -6px;
-    /* margin-top: 7px; */
-    
 }
 
 
+/*----------------tech-stack-------------------------*/
+
+#b2 legend{
+font-size: 20px;
+}
+
+#b2 fieldset{
+width: 90%;
+height: 95%;
+border: none;
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+#tech-stack{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.stack-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 5px;
+
+}
+
+.stack-container span{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.stack-container img{
+    height: 40px;
+}
+
+/*----------education----------*/
+
+#edu legend{
+    font-size: 20px;
+}
+
+#edu h3,#edu h4{
+    font-size: 12px;
+
+}
+
+#edu h5{
+    margin-left: 30px;
+    font-size: 10px;
+    color: #626868;
+
+}
+
+#edu > div{
+    display: flex;
+}

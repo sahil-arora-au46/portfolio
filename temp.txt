@@ -1,0 +1,56 @@
+<div class="stack-container">
+                            <img src="./images/icons/tech_stack/html.svg" alt="html">
+                            <span>HTML</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/css.svg" alt="html">
+                            <span>CSS</span>
+                        </div>
+                        <div class="stack-container">
+                            <img id="js" src="./images/icons/tech_stack/javascript.svg" alt="java-script">
+                            <span>Java Script</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/react-svgrepo-com.svg" alt="html">
+                            <span>React.js</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/nextjs-svgrepo-com.svg" alt="html">
+                            <span>Next.js</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/redux.svg" alt="html">
+                            <span>Redux</span>
+                        </div>
+                       
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/vue-9-logo-svgrepo-com.svg" alt="html">
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/nuxt-js-svgrepo-com.svg" alt="html">
+                            <span>Nuxt.js</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/vitest-seeklogo.svg" alt="html">
+                            <span>Vitest</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/nodejs.svg" alt="html">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="stack-container">
+                            <img src="./images/icons/tech_stack/expressjs-icon.svg" alt="html">
+                            <span>Express.js</span>
+                        </div>
+                        
+                        <div class="stack-container">
+                            <img id="mongo" src="./images/icons/tech_stack/mongo-svgrepo-com.svg" alt="html">
+                            <span>MongoDB</span>
+
+                        </div>
+                        <div class="stack-container">
+                            <img  src="./images/icons/tech_stack/python-svgrepo-com.svg" alt="html">
+                            <span>Python</span>
+                            
+                        </div>
