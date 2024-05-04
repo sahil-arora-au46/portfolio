@@ -325,6 +325,8 @@ font-size: 13px;
 
 #b2 legend{
 font-size: 20px;
+letter-spacing: 2px;
+
 }
 
 #b2 fieldset{
@@ -364,10 +366,6 @@ margin-top: 20px;
 }
 
 /*----------education----------*/
-
-#edu legend{
-    font-size: 20px;
-}
 
 #edu h3,#edu h4{
     font-size: 12px;
